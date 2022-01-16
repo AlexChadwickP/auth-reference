@@ -1,0 +1,30 @@
+GET http://localhost:8080/users
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+
+{
+    "fullName": "Alex Chadwick",
+    "email": "alex@google.com",
+    "role": "admin",
+    "password": "dev123"
+}
+
+###
+
+POST http://localhost:8080/signin
+Content-Type: application/json
+
+{
+    "fullName": "Alex Chadwick",
+    "email": "alex@google.com",
+    "role": "admin",
+    "password": "dev123"
+}
+
+###
+
+GET http://localhost:8080/supersecretcontent
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFsZXhAZ29vZ2xlLmNvbSIsImlhdCI6MTY0MjM2MTUyNSwiZXhwIjoxNjQyNDQ3OTI1fQ.qebhMgIYASmD6uIumIMYvdS6KSMDkorFkYglzy-77A8
